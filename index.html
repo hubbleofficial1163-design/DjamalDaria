@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Степан & Евгения - Свадьба</title>
+    <title>Джамал & Дарья - Свадьба</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1 class="subtitle animate-fade-in-up">Wedding day</h1>
-            <h2 class="title animate-fade-in-up-delay">СТЕПАН & ЕВГЕНИЯ</h2>
+            <h2 class="title animate-fade-in-up-delay">ДЖАМАЛ & ДАРЬЯ</h2>
             
             <!-- ПЛЕЕР ДОБАВЛЯЕМ ЗДЕСЬ - ПОСЛЕ ЗАГОЛОВКОВ, ПЕРЕД ФОТО -->
             <div class="music-player-container">
@@ -29,7 +29,7 @@
                             <defs>
                                 <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
                             </defs>
-                            <text fill="#450619" font-family="'Cormorant Garamond', serif" font-size="14" font-weight="300">
+                            <text fill="#3d234a" font-family="'Cormorant Garamond', serif" font-size="14" font-weight="300">
                                 <textPath xlink:href="#circlePath" startOffset="50%" text-anchor="middle">
                                     • включите музыку • включите музыку • включите музыку 
                                 </textPath>
@@ -39,21 +39,21 @@
 
                         <button class="play-button" id="playButton">
                             <svg class="play-icon" viewBox="0 0 100 100">
-                                <polygon class="play-triangle" points="30,25 30,75 70,50" fill="#f0e9df"/>
-                                <rect class="pause-bar pause-left" x="30" y="25" width="15" height="50" fill="#f0e9df" opacity="0"/>
-                                <rect class="pause-bar pause-right" x="55" y="25" width="15" height="50" fill="#f0e9df" opacity="0"/>
+                                <polygon class="play-triangle" points="30,25 30,75 70,50" fill="#d2c5d9"/>
+                                <rect class="pause-bar pause-left" x="30" y="25" width="15" height="50" fill="#d2c5d9" opacity="0"/>
+                                <rect class="pause-bar pause-right" x="55" y="25" width="15" height="50" fill="#d2c5d9" opacity="0"/>
                             </svg>
                         </button>
                     </div>
                     
                     <audio id="weddingMusic" loop>
-                        <source src="1.mp3" type="audio/mpeg">
+                        <source src="11.mp3" type="audio/mpeg">
                     </audio>
                 </div>
             </div>
         </div>
         
-        <img src="11.jpg" alt="Андрей и Диана" class="hero-photo">
+        <img src="hero.jpg" alt="Андрей и Диана" class="hero-photo">
     </section>
 
 
@@ -86,8 +86,8 @@
         <div class="location-container">
             <!-- Текст приглашения и дата -->
             <div class="invitation-text">
-                <p class="invitation">ПДорогие гости, приглашаем Вас разделить с нами первый праздник нашей семьи - нашу свадьбу! </p>
-                <div class="date">21 АВГУСТА 2026</div>
+                <p class="invitation">Приглашаем Вас разделить с нами первый праздник нашей семьи – нашу свадьбу!</p>
+                <div class="date">СЕНТЯБРЬ 2026</div>
                 
                 <!-- Простой недельный календарь -->
                 <!-- Вместо <img src="4.png" alt="Дата свадьбы 8 июня 2026" class="date-photo"> вставляем этот код -->
@@ -106,14 +106,14 @@
     </div>
     <!-- Первая неделя (18.05 - 24.05) -->
     <div class="calendar-row">
-        <div class="calendar-date">17</div>
-        <div class="calendar-date">18</div>
-        <div class="calendar-date">19</div>
-        <!-- Выделенная дата свадьбы (21 мая) -->
-        <div class="calendar-date">20</div>
-        <div class="calendar-date wedding-date">21</div>
+        <div class="calendar-date">21</div>
         <div class="calendar-date">22</div>
         <div class="calendar-date">23</div>
+        <!-- Выделенная дата свадьбы (21 мая) -->
+        <div class="calendar-date">24</div>
+        <div class="calendar-date wedding-date">25</div>
+        <div class="calendar-date">26</div>
+        <div class="calendar-date">27</div>
     </div>
     <!-- Вторая неделя (25.05 - 31.05) -->
     <!-- <div class="calendar-row">
@@ -153,7 +153,7 @@
     /* Ячейка дня недели — прозрачная */
     .days-of-week .calendar-day {
         font-weight: 400;
-        color: #f0e9df; /* Светлый текст */
+        color: #d2c5d9; /* Светлый текст */
         opacity: 0.9;
     }
     .calendar-day {
@@ -162,7 +162,7 @@
         font-family: 'Cormorant Garamond', serif;
         font-weight: 300;
         font-size: 1.2rem;
-        color: #f0e9df; /* Светлый текст */
+        color: #d2c5d9; /* Светлый текст */
         padding: 5px; /* Уменьшил padding */
         /* Убираем фон */
         background-color: transparent !important;
@@ -175,7 +175,7 @@
         font-family: 'Cinzel', serif;
         font-weight: 700;
         font-size: 1.8rem;
-        color: #f0e9df; /* Светлый текст */
+        color: #d2c5d9; /* Светлый текст */
         padding: 10px 5px;
         margin: 0 5px;
         /* Полностью прозрачный фон */
@@ -186,8 +186,8 @@
 
     /* Выделенная дата свадьбы — только обводка/фон для самой даты */
     .calendar-date.wedding-date {
-        background-color: #f0e9df !important; /* Светлый фон только для этой ячейки */
-        color: #5c151b !important; /* Бордовый текст */
+        background-color: #d2c5d9 !important; /* Светлый фон только для этой ячейки */
+        color: #3d234a !important; /* Бордовый текст */
         border-radius: 50%; /* Делаем круглую форму */
         width: 50px;
         height: 50px;
@@ -212,7 +212,7 @@
         left: 50%;
         transform: translateX(-50%);
         font-size: 1.5rem;
-        color: #f0e9df;
+        color: #d2c5d9;
         white-space: nowrap;
     } */
 
@@ -290,12 +290,12 @@
                     
                     <!-- Фото места проведения ВНУТРИ блока location-info-light ПОСЛЕ заголовка -->
                     <div class="location-photo-container">
-                        <img src="loc.png" alt="Место проведения свадьбы" class="location-photo">
+                        <img src="loc2.jpg" alt="Место проведения свадьбы" class="location-photo">
                     </div>
                     
                     <!-- Адрес и кнопка ПОСЛЕ фото -->
-                    <p class="location-address">Банкет: СПА-отель МЕЛИОТ</p>
-                    <a href="https://yandex.ru/maps/-/CPguyIyD" class="map-button" target="_blank">Показать на карте</a>
+                    <p class="location-address">Дом художника «Шантэль», г. Махачкала, ул. Гагарина 21в</p>
+                    <a href="https://yandex.com/maps/-/CPCrj0Pg" class="map-button" target="_blank">Показать на карте</a>
                 </div>
             </div>
         </div>
@@ -311,28 +311,28 @@
         <div class="program">
 
         
-        <!-- <div class="program-item">
+        <div class="program-item">
             <div class="program-image">
             <img src="11.png" alt="Церемония" class="program-icon">
             </div>
             <div class="program-content">
-            <h3 class="program-title">ФУРШЕТ</h3>
-            <div class="program-time">16:00</div>
+            <h3 class="program-title">СБОР ГОСТЕЙ</h3>
+            <div class="program-time">15:30</div>
             </div>
-        </div> -->
+        </div>
         
         <div class="program-item">
             <div class="program-image">
-            <img src="16.png" alt="Ужин" class="program-icon">
+            <img src="12.png" alt="Ужин" class="program-icon">
             </div>
             <div class="program-content">
-            <h3 class="program-title">ТОРЖЕСТВЕННАЯ РЕГИСТРАЦИЯ</h3>
-            <div class="program-time">ЗАГС Советского р-на г. Челябинска, ул. Тимирязева, 28</div>
-            <div class="program-time">14:30 - 15:00</div>
+            <h3 class="program-title">СВАДЕБНАЯ ЦЕРЕМОНИЯ</h3>
+            <!-- <div class="program-time">ЗАГС Советского р-на г. Челябинска</div> -->
+            <div class="program-time">16:00</div>
             </div>
         </div>
 
-        <div class="program-item">
+        <!-- <div class="program-item">
             <div class="program-image">
             <img src="14.png" alt="Сбор гостей" class="program-icon icon-large">
             </div>
@@ -341,46 +341,46 @@
             <div class="program-time">Отель "Мелиот"</div>
             <div class="program-time">15:30</div>
             </div>
-        </div>
+        </div> -->
 
-
-        <div class="program-item">
-            <div class="program-image">
-            <img src="12.png" alt="Церемония" class="program-icon">
-            </div>
-            <div class="program-content">
-            <h3 class="program-title">ВЫЕЗДНАЯ РЕГИСТРАЦИЯ</h3>
-            <div class="program-time">16:00</div>
-            </div>
-        </div>
         
         <div class="program-item">
             <div class="program-image">
             <img src="13.png" alt="Торт" class="program-icon">
             </div>
             <div class="program-content">
-            <h3 class="program-title">НАЧАЛО БАНКЕТА</h3>
-            <div class="program-time">17:00</div>
+            <h3 class="program-title">БАНКЕТ</h3>
+            <div class="program-time">16:45</div>
             </div>
         </div> 
+
+        <div class="program-item">
+            <div class="program-image program-image-large">
+            <img src="14.png" alt="Церемония" class="program-icon icon-large">
+            </div>
+            <div class="program-content">
+            <h3 class="program-title">СВАДЕБНЫЙ ТОРТ</h3>
+            <div class="program-time">19:30</div>
+            </div>
+        </div>
         
         <div class="program-item">
             <div class="program-image">
             <img src="11.png" alt="Танцы" class="program-icon">
             </div>
             <div class="program-content">
-            <h3 class="program-title">ДИСКОТЕКА</h3>
-            <div class="program-time">22:00</div>
+            <h3 class="program-title">МУЗЫКАЛЬНАЯ ПРОГРАММА</h3>
+            <div class="program-time">20:00</div>
             </div>
         </div>
         
         <div class="program-item">
             <div class="program-image">
-            <img src="15.png" alt="Окончание" class="program-icon">
+            <img src="16.png" alt="Окончание" class="program-icon">
             </div>
             <div class="program-content">
             <h3 class="program-title">ОКОНЧАНИЕ ВЕЧЕРА</h3>
-            <div class="program-time">23:00</div>
+            <div class="program-time">21:00</div>
             </div>
         </div>
         </div>
@@ -394,11 +394,14 @@
             
             <div class="wishes-content">
                 <p class="wishes-text">
-                    Ваше присутствие на нашей свадьбе — уже самый ценный подарок для нас! <br><br>
-                    Если вы всё же хотите сделать нам подарок, мы будем искренне благодарны за ваш вклад в бюджет нашей молодой семьи — он поможет нам осуществить самые сокровенные мечты. <br> <br>
-                    Мы будем Вам признательны, если вместо самого прекрасного букета Вы порадуете невесту сертификатом в цветочный магазин: так невеста сможет наслаждаться цветами не только один день<br> <br>
-                    На нашем празднике будет все: смех, слезы счастья, танцы, песни, тосты… Но наша любовь достаточно сладкая, поэтому просим вас обойтись без «Горько»! <br> <br>
-                    Дорогие гости, наш вечер будет особенным и, к сожалению, не совсем подходящим для детей. Пожалуйста, позвольте себе отдохнуть и насладиться праздником. Просим вас оставить деток в надежных руках на этот вечер.
+                    
+                    Ваше присутствие на нашей свадьбе — уже самый ценный подарок для нас!  <br><br>
+                    
+                    Если вы всё же хотите сделать нам подарок, мы будем искренне благодарны за ваш вклад в бюджет нашей молодой семьи — он поможет нам осуществить самые сокровенные мечты.  <br> <br>
+
+                    Очень надеемся, что у вас будет возможность оставить детей под присмотром дома и полностью погрузиться в атмосферу праздника вместе с нами!🤍
+
+
                 </p>
             </div>
         </div>
@@ -418,11 +421,11 @@
                 
                 <!-- КРУЖОЧКИ С ЦВЕТАМИ -->
                 <div class="color-palette">
-                    <div class="color-circle" style="background-color: #543c30;"></div>
-             
-                    <div class="color-circle" style="background-color: #c09c9c;"></div>
-                    <div class="color-circle" style="background-color: rgb(125, 129, 105);"></div>              
-                    <div class="color-circle" style="background-color: #540c20;"></div>
+                    <div class="color-circle" style="background-color: #3a244a;"></div>
+                    <div class="color-circle" style="background-color: #6f5980;"></div>              
+                    <div class="color-circle" style="background-color: #b9a4c3;"></div>
+                    <div class="color-circle" style="background-color: #d2c5d9"></div>              
+                    <!-- <div class="color-circle" style="background-color: #540c20;"></div> -->
                 </div>
                 <!-- КОНЕЦ КРУЖОЧКОВ -->
             </div>
@@ -470,21 +473,17 @@
         
         <div class="rsvp-content">
             <p class="rsvp-text">
-                Мы будем ждать Вашего ответа до 31 июля 2026 года.
-                <div class="program-time">Вашу вторую половинку просим отдельно заполнить анкету!</div>
+                Мы будем ждать от вас ответ до 10 сентября 2026 года.
             </p>
-            
             
             <form class="rsvp-form">
                 <div class="form-group">
-                    
                     <input type="text" class="form-input" placeholder="Фамилия Имя" required>
                 </div>
                 
                 <!-- ПОДТВЕРЖДЕНИЕ ПРИСУТСТВИЯ -->
                 <div class="form-group">
-                    <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: #5c151b; margin-bottom: 15px;">Подтверждение присутствия:</p>
-                    
+                    <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: #3d234a; margin-bottom: 15px;">Подтверждение присутствия</p>
                     <div class="radio-group">
                         <label class="radio-label">
                             <input type="radio" name="attendance" value="yes" required>
@@ -501,36 +500,36 @@
                 </div>
                 
                 <!-- ПРЕДПОЧТЕНИЯ ПО АЛКОГОЛЮ -->
-                <div class="form-group">
-                    <label style="display: block; margin-bottom: 12px; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: #5c151b;">Предпочтения по алкоголю: <div class="program-time">(Не более 2-х вариантов)</div></label>
+                <!-- <div class="form-group">
+                    <label style="display: block; margin-bottom: 12px; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: #3d234a;">Предпочтения по алкоголю</label>
                     <div class="alcohol-options" style="display: flex; flex-wrap: wrap; gap: 12px;">
-                        <label class="alcohol-option" style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
                             <input type="checkbox" name="alcohol" value="red_wine" style="width: 18px; height: 18px; cursor: pointer;"> Красное вино
                         </label>
-                        <label class="alcohol-option" style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
                             <input type="checkbox" name="alcohol" value="white_wine" style="width: 18px; height: 18px; cursor: pointer;"> Белое вино
                         </label>
-                        <label class="alcohol-option" style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
-                            <input type="checkbox" name="alcohol" value="champagne" style="width: 18px; height: 18px; cursor: pointer;"> Шампанское
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
+                            <input type="checkbox" name="alcohol" value="champagne" style="width: 18px; height: 18px; cursor: pointer;"> Шампанское 
                         </label>
-                        <label class="alcohol-option" style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
                             <input type="checkbox" name="alcohol" value="vodka" style="width: 18px; height: 18px; cursor: pointer;"> Водка
                         </label>
-                        <label class="alcohol-option" style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
                             <input type="checkbox" name="alcohol" value="whiskey" style="width: 18px; height: 18px; cursor: pointer;"> Виски
                         </label>
-                        <label class="alcohol-option" style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
                             <input type="checkbox" name="alcohol" value="cognac" style="width: 18px; height: 18px; cursor: pointer;"> Коньяк
                         </label>
-                        <label class="alcohol-option alcohol-option-none" style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1rem;">
                             <input type="checkbox" name="alcohol" value="none" style="width: 18px; height: 18px; cursor: pointer;"> Не буду алкоголь
                         </label>
                     </div>
-                </div>
+                </div> -->
                 
                 <!-- ПРЕДПОЧТЕНИЯ ПО ЕДЕ -->
-                <div class="form-group">
-                    <label style="display: block; margin-bottom: 12px; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: #5c151b;">Предпочтение по еде:</label>
+                <!-- <div class="form-group">
+                    <label style="display: block; margin-bottom: 12px; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: #3d234a;">Предпочтение по еде</label>
                     <div class="food-options" style="display: flex; flex-wrap: wrap; gap: 20px;">
                         <label class="radio-label" style="margin-right: 20px;">
                             <input type="radio" name="food" value="meat" required>
@@ -548,7 +547,7 @@
                             <span class="radio-text">Рыба</span>
                         </label>
                     </div>
-                </div>
+                </div> -->
                 
                 <button type="submit" class="submit-button">Подтвердить</button>
             </form>
@@ -556,54 +555,18 @@
     </div>
 </section>
 
-
-<!-- Секция ГАЛЕРЕЯ -->
-<section class="gallery-section">
-    <div class="gallery-container">
-        <h2 class="gallery-title">Наши моменты</h2>
-        
-        <div class="gallery-slider-container">
-            <div class="gallery-slider" id="gallerySlider">
-                <div class="gallery-slide">
-                    <img src="1.jpg" alt="Фото 1" class="gallery-image">
-                </div>
-                <div class="gallery-slide">
-                    <img src="2.jpg" alt="Фото 2" class="gallery-image">
-                </div>
-                <div class="gallery-slide">
-                    <img src="3.jpg" alt="Фото 3" class="gallery-image">
-                </div>
-                <div class="gallery-slide">
-                    <img src="4.jpg" alt="Фото 4" class="gallery-image">
-                </div>
-                <div class="gallery-slide">
-                    <img src="5.jpg" alt="Фото 5" class="gallery-image">
-                </div>
-            </div>
-            
-            <!-- Кнопки навигации -->
-            <button class="gallery-nav gallery-prev" id="galleryPrev">‹</button>
-            <button class="gallery-nav gallery-next" id="galleryNext">›</button>
-        </div>
-        
-        <!-- Индикаторы (точки) -->
-        <div class="gallery-dots" id="galleryDots"></div>
-    </div>
-</section>
-
     <!-- Футер -->
-<!-- Футер -->
 <!-- Футер -->
 <footer class="footer-section">
     <div class="footer-container">
-        <!-- Фото heart.png -->
-        <div class="footer-photo-container">
-            <img src="heart.png" alt="Сердце" class="footer-heart">
-        </div>
+        <!-- Фото 2.jpg -->
+        <!-- <div class="footer-photo-container">
+            <img src="2.jpg" alt="Андрей и Диана" class="footer-photo">
+        </div> -->
         
         <p class="footer-text">
-            Очень ждём вас, <br> с любовью Степан и Евгения
-
+            Ждём Вас с нетерпением!<br>
+            Джамал и Дарья
         </p>
     </div>
 </footer>
