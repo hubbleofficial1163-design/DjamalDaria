@@ -1025,15 +1025,18 @@ a,
         padding-right: 16px;
         align-items: center;
         text-align: center;
+        
     }
 
     .subtitle {
         font-size: 1rem;
         letter-spacing: 0.3rem;
+        transform: translateX(-40%) !important;
     }
 
     .title {
         font-size: 2.5rem;
+         transform: translateX(-15%) !important;
     }
 
     .hero-photo {
@@ -1051,6 +1054,8 @@ a,
     /* Плеер */
     .music-player-container {
         margin: 0 0 18px 0;
+        top: -60px;
+        
     }
 
     .circle-player {
