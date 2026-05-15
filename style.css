@@ -89,6 +89,7 @@ body {
     color: #d2c5d9;
     font-style: italic;
     order: 2;
+    left: -10px;
 }
 
 /* Стили для основного текста */
@@ -1100,6 +1101,7 @@ a,
 @media screen and (max-width: 360px) {
     .title {
         font-size: 2rem;
+         transform: translateX(-15%) !important;
     }
 
     .date {
